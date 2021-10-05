@@ -6,6 +6,7 @@ class Carro:
         self._status = status
         self._valor = valor
     
+    # Getters e Setters
     def get_cor(self):
         return self._cor
 

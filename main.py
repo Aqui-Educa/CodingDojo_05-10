@@ -41,4 +41,7 @@ lista_vendedor.append(vendedor)
 # vendedor.venda(carro, pessoa)
 # pessoa.venda(carro, pessoa)
 
-carro.andar()
+km = carro.get_km()
+mes = carro.get_mes()
+carro.andar(km, mes)
+

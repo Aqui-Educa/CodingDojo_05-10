@@ -40,10 +40,16 @@ class Carro:
         self._valor = valor
 
     def get_km(self):
-        return self._valor
+        return self._km
 
-    def set_valor(self, valor):
-        self._valor = valor
+    def set_km(self, km):
+        self._km = km
+
+    def get_mes(self):
+        return self._mes
+
+    def set_mes(self, mes):
+        self._mes = mes
 
     def ligar(self):
         if(self._status == True):
@@ -60,8 +66,11 @@ class Carro:
         elif km == 4000 or mes == 9:
             print("Efetue a segunda revisão do seu veiculo!\n"
                   "A proxima revisão será aos 10000km ou 6 meses")
+        else:
+            print("Seu carro não precisa de revisão")
 
     def andar(self, km, mes):
         km = km + 500
+        mes = mes + 1
         Carro.revisao(km, mes)
         return km

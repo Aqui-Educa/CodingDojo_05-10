@@ -2,7 +2,36 @@ from Carro import Carro
 from Pessoa import Pessoa
 from Vendedor import Vendedor
 
-carro1 = Carro('prata', 'toyota', 'AE86', False)
+lista_carro = []
+lista_pessoa = []
+lista_vendedor = []
 
-carro1.ligar()
-carro1.ligar()
+# Carros
+cor = input('Cor do carro: ')
+marca = input('Marca do carro: ')
+modelo = input('Modelo do carro: ')
+status = bool(input('Status do carro: '))
+valor = float(input('Valor do carro: '))
+
+carro = Carro(cor, marca, modelo, status, valor)
+lista_carro.append(carro)
+
+# Pessoa
+cpf = input('CPF do comprador: ')
+nome = input('Nome do comprador: ')
+telefone = input('Telefone do comprador: ')
+email = input('Email do comprador: ')
+
+pessoa = Pessoa(cpf, nome, telefone, email)
+lista_pessoa.append(pessoa)
+
+# Vendedor
+cpf = input('CPF do vendedor: ')
+nome = input('Nome do vendedor: ')
+telefone = input('Telefone do vendedor: ')
+email = input('Email do vendedor: ')
+empresa = input('Empresa do vendedor: ')
+codigo_vendedor = input('Código do vendedor: ')
+
+vendedor = Vendedor(cpf, nome, telefone, email, empresa, codigo_vendedor)
+lista_vendedor.append(vendedor)

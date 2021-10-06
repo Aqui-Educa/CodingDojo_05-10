@@ -13,7 +13,7 @@ lista_vendedor = []
 # status = bool(input('Status do carro: '))
 # valor = float(input('Valor do carro: '))
 
-carro = Carro("cor", "marca", "modelo", False, 9000)
+carro = Carro("cor", "marca", "modelo", False, 9000, 0, 0)
 lista_carro.append(carro)
 
 # # Pessoa
@@ -33,9 +33,12 @@ lista_pessoa.append(pessoa)
 # empresa = input('Empresa do vendedor: ')
 # codigo_vendedor = input('Código do vendedor: ')
 
-vendedor = Vendedor("cpf", "nome", "telefone", "email", "empresa", "codigo_vendedor")
+vendedor = Vendedor("cpf", "nome", "telefone", "email",
+                    "empresa", "codigo_vendedor")
 lista_vendedor.append(vendedor)
 
 # Venda
-vendedor.venda(carro, pessoa)
-pessoa.venda(carro, pessoa)
+# vendedor.venda(carro, pessoa)
+# pessoa.venda(carro, pessoa)
+
+carro.andar()

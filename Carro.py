@@ -1,11 +1,13 @@
 class Carro:
-    def __init__(self, cor, marca, modelo, status, valor):
+    def __init__(self, cor, marca, modelo, status, valor, km, mes):
         self._cor = cor
         self._marca = marca
         self._modelo = modelo
         self._status = status
         self._valor = valor
-    
+        self._km = km
+        self._mes = mes
+
     # Getters e Setters
     def get_cor(self):
         return self._cor
@@ -37,9 +39,12 @@ class Carro:
     def set_valor(self, valor):
         self._valor = valor
 
-    
+    def get_km(self):
+        return self._valor
 
-    
+    def set_valor(self, valor):
+        self._valor = valor
+
     def ligar(self):
         if(self._status == True):
             self._status = False
@@ -47,3 +52,16 @@ class Carro:
         else:
             self._status = True
             print('Carro foi ligado!')
+
+    def revisao(self, km, mes):
+        if km == 1000 or mes == 3:
+            print("Efetue a primeira revisão do seu veiculo!\n"
+                  " A proxima revisão será aos 4000km ou 6 meses")
+        elif km == 4000 or mes == 9:
+            print("Efetue a segunda revisão do seu veiculo!\n"
+                  "A proxima revisão será aos 10000km ou 6 meses")
+
+    def andar(self, km, mes):
+        km = km + 500
+        Carro.revisao(km, mes)
+        return km

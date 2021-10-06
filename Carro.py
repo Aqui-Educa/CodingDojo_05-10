@@ -1,5 +1,5 @@
 class Carro:
-    def __init__(self, cor, marca, modelo, status,valor):
+    def __init__(self, cor, marca, modelo, status, valor):
         self._cor = cor
         self._marca = marca
         self._modelo = modelo

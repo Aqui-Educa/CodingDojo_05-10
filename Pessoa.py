@@ -29,3 +29,6 @@ class Pessoa:
 
     def set_email(self, email):
         self._email = email
+
+    def venda(self, carro, pessoa):
+        print(f'Exemplo.....')    

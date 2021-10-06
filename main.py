@@ -33,8 +33,7 @@ lista_pessoa.append(pessoa)
 # empresa = input('Empresa do vendedor: ')
 # codigo_vendedor = input('Código do vendedor: ')
 
-vendedor = Vendedor("cpf", "nome", "telefone", "email",
-                    "empresa", "codigo_vendedor")
+vendedor = Vendedor("cpf", "nome", "telefone", "email", "empresa", "codigo_vendedor")
 lista_vendedor.append(vendedor)
 
 # Venda
@@ -44,4 +43,10 @@ lista_vendedor.append(vendedor)
 km = carro.get_km()
 mes = carro.get_mes()
 carro.andar(km, mes)
+
+km = carro.get_km()
+mes = carro.get_mes()
+carro.andar(km, mes)
+
+
 

@@ -71,6 +71,8 @@ class Carro:
 
     def andar(self, km, mes):
         km = km + 500
+        self.set_km(km)
         mes = mes + 1
-        Carro.revisao(km, mes)
+        self.set_mes(mes)
+        self.revisao(km, mes)
         return km

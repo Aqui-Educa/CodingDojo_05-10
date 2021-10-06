@@ -1,5 +1,5 @@
 from Pessoa import Pessoa
-from Carro
+
 
 class Vendedor(Pessoa):
     def __init__(self, cpf, nome, telefone, email, 
@@ -22,3 +22,6 @@ class Vendedor(Pessoa):
 
     def set_codigo_vendedor(self, codigo_vendedor):
         self._codigo_vendedor = codigo_vendedor
+
+    def venda(self, carro, pessoa):
+        print(f'O carro {carro.get_modelo()} foi vendido por {self.get_nome()}, para {pessoa.get_nome()}')

@@ -1,6 +1,5 @@
 from Pessoa import Pessoa
 
-
 class Vendedor(Pessoa):
     def __init__(self, cpf, nome, telefone, email, empresa, codigo_vendedor):
         

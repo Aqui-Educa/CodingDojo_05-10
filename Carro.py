@@ -70,9 +70,12 @@ class Carro:
             print("Seu carro não precisa de revisão")
 
     def andar(self, km, mes):
-        km = km + 500
+        km = km + 1000
         self.set_km(km)
         mes = mes + 1
         self.set_mes(mes)
         self.revisao(km, mes)
         return km
+
+    def multa(self, vel):
+        pass

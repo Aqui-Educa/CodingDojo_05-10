@@ -30,4 +30,4 @@ carro.andar(km, mes)
 
 # print('Parabéns, você chegou!!!')
 
-carro.multa()
+carro.multa(50)

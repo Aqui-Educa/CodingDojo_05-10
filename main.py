@@ -23,9 +23,11 @@ km = carro.get_km()
 mes = carro.get_mes()
 carro.andar(km, mes)
 
-while(km <= 10000):
-    carro.andar(km, mes)
-    print(f'Você andou {km} Km\n')
-    km += 1000
+# while(km <= 10000):
+#     carro.andar(km, mes)
+#     print(f'Você andou {km} Km\n')
+#     km += 1000
 
-print('Parabéns, você chegou!!!')
+# print('Parabéns, você chegou!!!')
+
+carro.multa()

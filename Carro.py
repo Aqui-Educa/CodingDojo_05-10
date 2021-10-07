@@ -77,5 +77,17 @@ class Carro:
         self.revisao(km, mes)
         return km
 
-    def multa(self, vel):
-        pass
+    def multa(self):
+        while True:
+            velocidade = float(input(f'Seu carro estava a quantos km/h? '))
+            try:
+                assert velocidade > 0
+            except:
+                print('Velocidade não pode ser menor ou igual a 0')
+                continue
+
+            print(f'Você passou a {velocidade} e o limite é 60')
+            
+            if velocidade > 60:
+                print('Você foi multado!')
+            break
